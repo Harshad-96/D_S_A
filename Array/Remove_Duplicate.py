@@ -3,7 +3,7 @@ class Solution(object):
 
         n = len(nums)
         i = 0
-        for j in range(1,n):
+        for j in range(0,n):
             if nums[j] != nums[i]:
                 nums[j],nums[i+1] = nums[i+1],nums[j]
                 i += 1

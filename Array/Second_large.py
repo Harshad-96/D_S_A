@@ -2,7 +2,7 @@ arr = [1,2,4,7,7,5]
 first_large = arr[0]
 sencond_large = -1
 
-for i in range(0,len(arr)-1):
+for i in range(0,len(arr)):
     if arr[i] > first_large:
         sencond_large = first_large
         first_large = arr[i]
