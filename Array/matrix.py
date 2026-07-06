@@ -20,9 +20,5 @@ matrix = [
 #     for j in range(col):
 #         print(matrix[i][j],end = " ")
 
-rows = len(matrix)
-cols = len(matrix[0])
-
-for i in range(rows):
-    for j in range(cols):
-        print(matrix[i][j], end=" ")
+n = len(matrix)
+print(n)
