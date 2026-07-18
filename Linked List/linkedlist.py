@@ -67,6 +67,12 @@ def removeEl(head,el):
     return head
 
 
+def remove_head(head,val):
+    temp = Node(val)
+    temp.next = head
+    head = temp
+    return head
+
 
 if __name__ == "__main__":
     arr = [12, 5, 8, 7]
@@ -74,5 +80,9 @@ if __name__ == "__main__":
     # head = remove_tail(head)
     
     head = removeEl(head,12)
+
+    print_list(head)
+    head = remove_head(head,11)
+    print(head.val)
     print_list(head)
     
