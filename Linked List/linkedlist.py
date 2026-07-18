@@ -49,7 +49,22 @@ def removeKth(head,k):
         temp = temp.next
     return head
         
-
+def removeEl(head,el):
+    if head is None :
+        return head
+    if head.val == el:
+        return head.next
+    count = 0
+    temp = head
+    prev = None
+    while temp is not None:
+        count += 1
+        if temp.val == el:
+            prev.next = prev.next.next
+            break
+        prev = temp
+        temp = temp.next
+    return head
 
 
 
@@ -58,5 +73,6 @@ if __name__ == "__main__":
     head = convert_arr_to_ll(arr)
     # head = remove_tail(head)
     
-    head = removeKth(head,2)
+    head = removeEl(head,12)
     print_list(head)
+    
