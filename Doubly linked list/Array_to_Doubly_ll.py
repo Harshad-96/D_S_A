@@ -21,6 +21,15 @@ def print_2ll(head):
         current = current.next
     print("None")
 
+def Delete_head(head):
+    current = head 
+    current = current.next
+    head = current
+    return head
+
 arr = [1,2,3,4,5]
 head = Array_to_2ll(arr)
 print_2ll(head)
+head = Delete_head(head)
+print_2ll(head)
+
